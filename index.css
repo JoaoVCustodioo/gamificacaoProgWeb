@@ -1,0 +1,103 @@
+header {
+	background: #BBBBBB;
+	padding: 50px 0;
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	right: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: blue;
+	text-decoration: underline;
+}
+
+form {
+	margin: 40px 20px;
+}
+
+form label, form legend {
+    display:block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.select {
+    display:block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 24.15%; 
+}
+
+.input-text, .input-number {
+    display:block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 20%; 
+}
+
+form p {
+    display:block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.radio {
+    margin: 20px 0;
+}
+
+.enviar {
+	width:10%;
+	padding: 15px 0;
+	background: green;
+	color:white;
+	font-weight: bold;
+	font-size: 18px;
+	border:none;
+	border-radius: 5px;
+	transition: 0.4s all;
+	cursor: pointer;
+}
+
+.enviar:hover {
+	background: darkgreen;
+	transform: scale(1.02);
+}
+
+.cancelar {
+	width:10%;
+	padding: 15px 0;
+	background: red;
+	color:white;
+	font-weight: bold;
+	font-size: 18px;
+	border:none;
+	border-radius: 5px;
+	transition: 0.4s all;
+	cursor: pointer;
+}
+
+.cancelar:hover {
+	background: darkred;
+	transform: scale(1.02);
+}
