@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="index.css">
+        <title>Formulário</title>
+    </head>
+    <body>
+      <header>
+        <div class="caixa">
+          <nav>
+            <ul>
+              <li><a href="index.html">Listagem</a></li>
+              <li><a href="form.html">Formulario</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <form>
+        <div>
+          <label>Marca</label>
+          <select class ="select" name="marca" required>
+            <option value="Toyota">Toyota</option>
+            <option value="Volkswagen">Volkswagen</option>
+            <option value="Honda">Honda</option>
+            <option value="Ford">Ford</option>
+            <option value="Chevrolet">Chevrolet</option>
+            <option value="" data-default disabled selected></option>
+          </select>
+        </div>
+        
+          <label>Modelo</label>
+          <input type="text" name="Modelo" maxlength="100" class="input-text" placeholder="SUV">
+
+          <label>Versão</label>
+          <input type="text" name="Versao" maxlength="100" class="input-text" placeholder="XLS">
+        
+          <label>Quilometragem</label>
+          <input type="number" class="input-number" placeholder="30000" min="0">
+        
+          <label>Ano</label>
+          <input type="number" class="input-number" placeholder="2023" min="1950" max="2024">
+        
+          <label>Preço</label>
+          <input type="number" class="input-number" placeholder="70000" min="0">
+        
+        <div>
+          <label>Cor</label>
+          <select class="select" name="Cor" required>
+              <option value="Azul">Azul</option>
+              <option value="Bege">Bege</option>
+              <option value="Branco">Branco</option>
+              <option value="Cinza">Cinza</option>
+              <option value="Marrom">Marrom</option>
+              <option value="Prata">Prata</option>
+              <option value="Preto">Preto</option>
+              <option value="Vermelho">Vermelho</option>
+              <option value="" data-default disabled selected></option>
+          </select>
+        </div>
+
+        <div>
+          <p><b>Opcionais</b></p>
+            <label for="Airbag"><input type="checkbox" name="Airbag" id="Airbag">Airbag</label>
+            
+            <label for="Alarme"><input type="checkbox" name="Alarme" id="Alarme">Alarme</label>
+            
+            <label for="Ar"><input type="checkbox" name="Ar" id="Ar">Ar-condicionado</label>
+            
+            <label for="Banco"><input type="checkbox" name="Banco" id="Banco">Banco em couro</label>
+            
+            <label for="computador"><input type="checkbox" name="computador" id="computador">Computador de Bordo</label>
+            
+            <label for="controle"><input type="checkbox" name="controle" id="controle">Controle automático de velocidade</label>
+            
+            <label for="controle-tracao"><input type="checkbox" name="controle-tracao" id="controle-tracao">Controle de tração</label>
+            
+            <label for="Direcao"><input type="checkbox" name="Direcao" id="Direcao">Direção Hidráulica</label>
+    
+            <label for="Abs"><input type="checkbox" name="Abs" id="Abs">Freio Abs</label>
+
+            <label for="roda"><input type="checkbox" name="roda" id="roda">Roda de liga leve</label>
+
+            <label for="sensor"><input type="checkbox" name="sensor" id="sensor">Sensor de chuva</label>
+
+            <label for="sensor-es"><input type="checkbox" name="sensor-es" id="sensor-es">Sensor de estacionamento</label>
+
+            <label for="teto"><input type="checkbox" name="teto" id="teto">Teto solar</label>
+
+            <label for="vidro"><input type="checkbox" name="vidro" id="vidro">Vidro Elétrico</label>
+        </div>
+
+        <div class="radio">
+          <legend>Blindado</legend>
+          <label for="radio-sim"><input type="radio" name="blindado" id="radio-sim" checked>Sim</label>
+          <label for="radio-nao"><input type="radio" name="blindado" id="radio-nao">Não</label>
+        </div>
+
+        <input type="submit" value="Salvar" class="enviar">
+        <a href="index.html"><input type="button" value="Cancelar" class="cancelar"></a>
+
+      </form>
+    </body>
+</html>
