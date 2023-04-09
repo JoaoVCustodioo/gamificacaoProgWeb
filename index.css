@@ -101,3 +101,8 @@ form p {
 	background: darkred;
 	transform: scale(1.02);
 }
+.center{
+	text-align: center;
+	display:inline-block;
+	position: absolute;
+}

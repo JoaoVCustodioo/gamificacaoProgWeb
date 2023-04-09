@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
     <title>Formulário</title>
   </head>
   <body>
@@ -19,10 +20,10 @@
         </nav>
       </div>
     </header>
-      <form>
+      <form id="form">
         <div>
           <label>Marca</label>
-          <select class ="select" name="marca" required>
+          <select id="marca" class ="select" name="marca" required>
             <option value="Toyota">Toyota</option>
             <option value="Volkswagen">Volkswagen</option>
             <option value="Honda">Honda</option>
@@ -32,22 +33,22 @@
           </select>
         </div>
           <label>Modelo</label>
-          <input type="text" name="Modelo" maxlength="100" class="input-text" placeholder="SUV">
+          <input id="modelo" type="text" name="Modelo" maxlength="100" class="input-text" placeholder="SUV">
 
           <label>Versão</label>
-          <input type="text" name="Versao" maxlength="100" class="input-text" placeholder="XLS">
+          <input id="versao" type="text" name="Versao" maxlength="100" class="input-text" placeholder="XLS">
         
           <label>Quilometragem</label>
-          <input type="number" class="input-number" placeholder="30000" min="0">
+          <input id="quilometragem" type="number" class="input-number" placeholder="30000" min="0">
         
           <label>Ano</label>
-          <input type="number" class="input-number" placeholder="2023" min="1950" max="2024">
+          <input id="ano" type="number" class="input-number" placeholder="2023" min="1950" max="2024">
         
           <label>Preço</label>
-          <input type="number" class="input-number" placeholder="70000" min="0">
+          <input id="preco" type="number" class="input-number" placeholder="70000" min="0">
         <div>
           <label>Cor</label>
-          <select class="select" name="Cor" required>
+          <select id="cor" class="select" name="Cor" required>
               <option value="Azul">Azul</option>
               <option value="Bege">Bege</option>
               <option value="Branco">Branco</option>
@@ -62,42 +63,42 @@
 
         <div>
           <p><b>Opcionais</b></p>
-            <label for="Airbag"><input type="checkbox" name="Airbag" id="Airbag">Airbag</label>
+            <label for="Airbag"><input type="checkbox" name="Airbag" id="Airbag" value="Airbag">Airbag</label>
             
-            <label for="Alarme"><input type="checkbox" name="Alarme" id="Alarme">Alarme</label>
+            <label for="Alarme"><input type="checkbox" name="Alarme" id="Alarme" value="Alarme">Alarme</label>
             
-            <label for="Ar"><input type="checkbox" name="Ar" id="Ar">Ar-condicionado</label>
+            <label for="Ar"><input type="checkbox" name="Ar" id="Ar" value="Ar-condicionado">Ar-condicionado</label>
             
-            <label for="Banco"><input type="checkbox" name="Banco" id="Banco">Banco em couro</label>
+            <label for="Banco"><input type="checkbox" name="Banco" id="Banco" value="Banco em couro">Banco em couro</label>
             
-            <label for="computador"><input type="checkbox" name="computador" id="computador">Computador de Bordo</label>
+            <label for="computador"><input type="checkbox" name="computador" id="computador" value="Computador de Bordo">Computador de Bordo</label>
             
-            <label for="controle"><input type="checkbox" name="controle" id="controle">Controle automático de velocidade</label>
+            <label for="controle"><input type="checkbox" name="controle" id="controle" value="Controle automático de velocidade">Controle automático de velocidade</label>
             
-            <label for="controle-tracao"><input type="checkbox" name="controle-tracao" id="controle-tracao">Controle de tração</label>
+            <label for="controle-tracao"><input type="checkbox" name="controle-tracao" id="controle-tracao" value="Controle de tração">Controle de tração</label>
             
-            <label for="Direcao"><input type="checkbox" name="Direcao" id="Direcao">Direção Hidráulica</label>
+            <label for="Direcao"><input type="checkbox" name="Direcao" id="Direcao" value="Direção Hidráulica">Direção Hidráulica</label>
     
-            <label for="Abs"><input type="checkbox" name="Abs" id="Abs">Freio Abs</label>
+            <label for="Abs"><input type="checkbox" name="Abs" id="Abs" value="Freio Abs">Freio Abs</label>
 
-            <label for="roda"><input type="checkbox" name="roda" id="roda">Roda de liga leve</label>
+            <label for="roda"><input type="checkbox" name="roda" id="roda" value="roda de liga leve">Roda de liga leve</label>
 
-            <label for="sensor"><input type="checkbox" name="sensor" id="sensor">Sensor de chuva</label>
+            <label for="sensor"><input type="checkbox" name="sensor" id="sensor" value="sensor de chuva">Sensor de chuva</label>
 
-            <label for="sensor-es"><input type="checkbox" name="sensor-es" id="sensor-es">Sensor de estacionamento</label>
+            <label for="sensor-es"><input type="checkbox" name="sensor-es" id="sensor-es" value="Sensor de estacionamento">Sensor de estacionamento</label>
 
-            <label for="teto"><input type="checkbox" name="teto" id="teto">Teto solar</label>
+            <label for="teto"><input type="checkbox" name="teto" id="teto" value="Teto sola">Teto solar</label>
 
-            <label for="vidro"><input type="checkbox" name="vidro" id="vidro">Vidro Elétrico</label>
+            <label for="vidro"><input type="checkbox" name="vidro" id="vidro" value="Vidro Elétrico">Vidro Elétrico</label>
         </div>
 
         <div class="radio">
           <legend>Blindado</legend>
-          <label for="radio-sim"><input type="radio" name="blindado" id="radio-sim" checked>Sim</label>
-          <label for="radio-nao"><input type="radio" name="blindado" id="radio-nao">Não</label>
+          <label for="radio-sim"><input type="radio" value="sim" name="blindado" id="radio-sim" checked>Sim</label>
+          <label for="radio-nao"><input type="radio" value="nao" name="blindado" id="radio-nao">Não</label>
         </div>
 
-        <input type="submit" value="Salvar" class="enviar">
+        <input type="button" value="Salvar" class="enviar" onclick="criarCarro()">
         <a href="index.html"><input type="button" value="Cancelar" class="cancelar"></a>
 
       </form>
