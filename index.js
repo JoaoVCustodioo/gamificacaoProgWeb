@@ -43,6 +43,7 @@ function listarCarros() {
     //botao editar
     let editarBtn = document.createElement("button");
     editarBtn.innerText = "Editar";
+    editarBtn.classList.add("botao-editar");
     editarBtn.onclick = function () {
       editarCarro(carro.registro);
     };
@@ -50,7 +51,7 @@ function listarCarros() {
     //botao excluir
     let excluirBtn = document.createElement("button");
     excluirBtn.innerText = "Excluir";
-    excluirBtn.style.padding= 20;
+    excluirBtn.classList.add("botao-excluir");
     excluirBtn.onclick = function () {
       excluirCarro(carro.registro);
     };
@@ -76,3 +77,18 @@ function excluirCarro(registro) {
     listarCarros();
   }
 }
+
+  function editarCarro(registro) {
+    console.log(registro);
+    let carros = JSON.parse(localStorage.getItem("carros")) || [];
+    let index = carros.findIndex(carro => carro.registro === registro);
+    if (index !== -1) {
+      
+      let carro = carros[index];
+      window.location.href = `form.html?marca=${carro.marca}&modelo=${carro.modelo}&versao=${carro.versao}&quilometragem=${carro.quilometragem}&ano=${carro.ano}&preco=${carro.preco}&cor=${carro.cor}&blindado=${carro.blindado}&opcionais=${JSON.stringify(carro.opcionais)}`;
+      carros.splice(index, 1);
+      localStorage.setItem("carros", JSON.stringify(carros));
+    }
+  }
+
+

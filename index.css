@@ -1,36 +1,4 @@
-header {
-	background: #BBBBBB;
-	padding: 50px 0;
-}
 
-.caixa {
-	position: relative;
-	width: 940px;
-	margin: 0 auto;
-}
-
-nav {
-	position: absolute;
-	right: 0;
-}
-
-nav li {
-	display: inline;
-	margin: 0 0 0 15px;
-}
-
-nav a {
-	text-transform: uppercase;
-	color: #000000;
-	font-weight: bold;
-	font-size: 22px;
-	text-decoration: none;
-}
-
-nav a:hover {
-	color: blue;
-	text-decoration: underline;
-}
 
 form {
 	margin: 40px 20px;
@@ -69,40 +37,83 @@ form p {
 .enviar {
 	width:10%;
 	padding: 15px 0;
-	background: green;
-	color:white;
+	color:darkgreen;
+	border: 2px solid darkgreen;
 	font-weight: bold;
 	font-size: 18px;
-	border:none;
 	border-radius: 5px;
 	transition: 0.4s all;
 	cursor: pointer;
+	
 }
 
 .enviar:hover {
 	background: darkgreen;
+	color:whitesmoke;
 	transform: scale(1.02);
 }
 
 .cancelar {
 	width:10%;
 	padding: 15px 0;
-	background: red;
-	color:white;
+	color: darkred;
 	font-weight: bold;
 	font-size: 18px;
 	border:none;
+	border: 2px solid darkred;
 	border-radius: 5px;
 	transition: 0.4s all;
 	cursor: pointer;
+
 }
 
 .cancelar:hover {
 	background: darkred;
+	color:whitesmoke;
 	transform: scale(1.02);
 }
 .center{
 	text-align: center;
 	display:inline-block;
 	position: absolute;
+}
+
+.table{
+	width: 100%;
+}
+.botao-excluir{
+  color: darkred;
+  padding: 10px;
+  border: 2px solid darkred;
+  background-color: #212529;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 3px;
+}
+.botao-excluir:hover{
+	background: darkred;
+	color: whitesmoke;
+	transform: scale(1.02);
+}
+.botao-editar{
+	color: rgb(202, 182, 0);
+	padding: 10px;
+	background-color: #212529;
+	border: 2px solid rgb(202, 182, 0);
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: 600;
+	margin-left: 3px;
+}
+.botao-editar:hover{
+	background: rgb(202, 182, 0);
+	color: whitesmoke;
+	transform: scale(1.02);
+}
+.navbar{
+	font-weight: 600 !important;
+}
+label{
+	font-weight: 400;
 }
