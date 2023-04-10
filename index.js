@@ -33,12 +33,16 @@ function listarCarros() {
     let colunaMarca = linha.insertCell();
     let colunaModelo = linha.insertCell();
     let colunaAno = linha.insertCell();
+    let cor= linha.insertCell();
     let colunaOpcionais = linha.insertCell();
+    let blindado = linha.insertCell();
     let opcoes = linha.insertCell();
     colunaMarca.innerHTML = carro.marca;
     colunaModelo.innerHTML = carro.modelo;
     colunaAno.innerHTML = carro.ano;
+    cor.innerHTML = carro.cor;
     colunaOpcionais.innerHTML = carro.opcionais.join(", ");
+    blindado.innerHTML = carro.blindado;
     
     //botao editar
     let editarBtn = document.createElement("button");
